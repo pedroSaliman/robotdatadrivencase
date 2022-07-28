@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.5 on win32)" generated="20220728 17:44:21.054" rpa="false" schemaversion="3">
+<suite id="s1" name="Datadriven" source="C:\Users\LORD TRADE\Desktop\robotdata\datadriven.robot">
+<kw name="open" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220728 17:44:22.304" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220728 17:44:22.303" endtime="20220728 17:44:27.612"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:22.303" endtime="20220728 17:44:27.612"/>
+</kw>
+<test id="s1-t1" name="LoginWithExcel" line="12">
+<kw name="invalidlogin">
+<arg>med@gmail.com</arg>
+<arg>123456789</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtUsername']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:27.615" level="INFO">Typing text 'med@gmail.com' into text field 'xpath://input[@id='txtUsername']'.</msg>
+<status status="PASS" starttime="20220728 17:44:27.614" endtime="20220728 17:44:27.701"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:27.702" level="INFO">Typing password into text field 'xpath://input[@id='txtPassword']'.</msg>
+<msg timestamp="20220728 17:44:27.740" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220728 17:44:27.783" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220728 17:44:27.701" endtime="20220728 17:44:27.783"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:27.784" level="INFO">Clicking element 'xpath://input[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20220728 17:44:27.783" endtime="20220728 17:44:28.998"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://span[@id='spanMessage']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220728 17:44:29.030" level="INFO">Element 'xpath://span[@id='spanMessage']' is displayed.</msg>
+<status status="PASS" starttime="20220728 17:44:28.998" endtime="20220728 17:44:29.030"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:27.614" endtime="20220728 17:44:29.031"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:27.612" endtime="20220728 17:44:29.031"/>
+</test>
+<test id="s1-t2" name="LoginWithExcel" line="12">
+<kw name="invalidlogin">
+<arg>saliman@gmail.com</arg>
+<arg>123456789</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtUsername']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:29.035" level="INFO">Typing text 'saliman@gmail.com' into text field 'xpath://input[@id='txtUsername']'.</msg>
+<status status="PASS" starttime="20220728 17:44:29.035" endtime="20220728 17:44:29.118"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:29.118" level="INFO">Typing password into text field 'xpath://input[@id='txtPassword']'.</msg>
+<msg timestamp="20220728 17:44:29.152" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220728 17:44:29.195" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220728 17:44:29.118" endtime="20220728 17:44:29.195"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:29.196" level="INFO">Clicking element 'xpath://input[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20220728 17:44:29.196" endtime="20220728 17:44:30.230"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://span[@id='spanMessage']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220728 17:44:30.254" level="INFO">Element 'xpath://span[@id='spanMessage']' is displayed.</msg>
+<status status="PASS" starttime="20220728 17:44:30.230" endtime="20220728 17:44:30.254"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:29.035" endtime="20220728 17:44:30.254"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:29.033" endtime="20220728 17:44:30.255"/>
+</test>
+<test id="s1-t3" name="LoginWithExcel" line="12">
+<kw name="invalidlogin">
+<arg>mahmoud@gmail.com</arg>
+<arg>123456789</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtUsername']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:30.259" level="INFO">Typing text 'mahmoud@gmail.com' into text field 'xpath://input[@id='txtUsername']'.</msg>
+<status status="PASS" starttime="20220728 17:44:30.258" endtime="20220728 17:44:30.342"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:30.343" level="INFO">Typing password into text field 'xpath://input[@id='txtPassword']'.</msg>
+<msg timestamp="20220728 17:44:30.378" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220728 17:44:30.422" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220728 17:44:30.342" endtime="20220728 17:44:30.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:30.422" level="INFO">Clicking element 'xpath://input[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20220728 17:44:30.422" endtime="20220728 17:44:31.826"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://span[@id='spanMessage']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220728 17:44:31.847" level="INFO">Element 'xpath://span[@id='spanMessage']' is displayed.</msg>
+<status status="PASS" starttime="20220728 17:44:31.827" endtime="20220728 17:44:31.847"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:30.258" endtime="20220728 17:44:31.847"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:30.257" endtime="20220728 17:44:31.848"/>
+</test>
+<test id="s1-t4" name="LoginWithExcel" line="12">
+<kw name="invalidlogin">
+<arg>mohb@gmail.com</arg>
+<arg>123456789</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtUsername']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:31.852" level="INFO">Typing text 'mohb@gmail.com' into text field 'xpath://input[@id='txtUsername']'.</msg>
+<status status="PASS" starttime="20220728 17:44:31.852" endtime="20220728 17:44:31.936"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:31.937" level="INFO">Typing password into text field 'xpath://input[@id='txtPassword']'.</msg>
+<msg timestamp="20220728 17:44:31.971" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220728 17:44:32.012" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220728 17:44:31.937" endtime="20220728 17:44:32.013"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:32.013" level="INFO">Clicking element 'xpath://input[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20220728 17:44:32.013" endtime="20220728 17:44:33.003"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://span[@id='spanMessage']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220728 17:44:33.026" level="INFO">Element 'xpath://span[@id='spanMessage']' is displayed.</msg>
+<status status="PASS" starttime="20220728 17:44:33.003" endtime="20220728 17:44:33.026"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:31.851" endtime="20220728 17:44:33.026"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:31.850" endtime="20220728 17:44:33.027"/>
+</test>
+<test id="s1-t5" name="LoginWithExcel" line="12">
+<kw name="invalidlogin">
+<arg>khalil@gmail.com</arg>
+<arg>123456789</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtUsername']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:33.031" level="INFO">Typing text 'khalil@gmail.com' into text field 'xpath://input[@id='txtUsername']'.</msg>
+<status status="PASS" starttime="20220728 17:44:33.031" endtime="20220728 17:44:33.112"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:33.113" level="INFO">Typing password into text field 'xpath://input[@id='txtPassword']'.</msg>
+<msg timestamp="20220728 17:44:33.149" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220728 17:44:33.194" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220728 17:44:33.112" endtime="20220728 17:44:33.194"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:33.194" level="INFO">Clicking element 'xpath://input[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20220728 17:44:33.194" endtime="20220728 17:44:34.230"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://span[@id='spanMessage']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220728 17:44:34.250" level="INFO">Element 'xpath://span[@id='spanMessage']' is displayed.</msg>
+<status status="PASS" starttime="20220728 17:44:34.231" endtime="20220728 17:44:34.250"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:33.030" endtime="20220728 17:44:34.250"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:33.029" endtime="20220728 17:44:34.251"/>
+</test>
+<test id="s1-t6" name="LoginWithExcel" line="12">
+<kw name="invalidlogin">
+<arg>sherief@gmail.com</arg>
+<arg>123456789</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtUsername']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:34.256" level="INFO">Typing text 'sherief@gmail.com' into text field 'xpath://input[@id='txtUsername']'.</msg>
+<status status="PASS" starttime="20220728 17:44:34.256" endtime="20220728 17:44:34.347"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath://input[@id='txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:34.347" level="INFO">Typing password into text field 'xpath://input[@id='txtPassword']'.</msg>
+<msg timestamp="20220728 17:44:34.384" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220728 17:44:34.427" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220728 17:44:34.347" endtime="20220728 17:44:34.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220728 17:44:34.427" level="INFO">Clicking element 'xpath://input[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20220728 17:44:34.427" endtime="20220728 17:44:35.470"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://span[@id='spanMessage']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220728 17:44:35.489" level="INFO">Element 'xpath://span[@id='spanMessage']' is displayed.</msg>
+<status status="PASS" starttime="20220728 17:44:35.470" endtime="20220728 17:44:35.490"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:34.255" endtime="20220728 17:44:35.490"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:34.254" endtime="20220728 17:44:35.490"/>
+</test>
+<kw name="close" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220728 17:44:35.493" endtime="20220728 17:44:37.667"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:35.492" endtime="20220728 17:44:37.668"/>
+</kw>
+<status status="PASS" starttime="20220728 17:44:21.056" endtime="20220728 17:44:37.668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Datadriven">Datadriven</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220728 17:44:29.033" level="WARN">Multiple tests with name 'LoginWithExcel' executed in suite 'Datadriven'.</msg>
+<msg timestamp="20220728 17:44:30.256" level="WARN">Multiple tests with name 'LoginWithExcel' executed in suite 'Datadriven'.</msg>
+<msg timestamp="20220728 17:44:31.849" level="WARN">Multiple tests with name 'LoginWithExcel' executed in suite 'Datadriven'.</msg>
+<msg timestamp="20220728 17:44:33.028" level="WARN">Multiple tests with name 'LoginWithExcel' executed in suite 'Datadriven'.</msg>
+<msg timestamp="20220728 17:44:34.253" level="WARN">Multiple tests with name 'LoginWithExcel' executed in suite 'Datadriven'.</msg>
+</errors>
+</robot>
